@@ -4,7 +4,7 @@
 __author__ = "730308740"
 
 
-def invert(my_dict: dict[str, str]) -> dict[str,str]: 
+def invert(my_dict: dict[str, str]) -> dict[str, str]: 
     """Makes Keys Values and Values Keys."""
     tcid: dict[str, str] = dict() 
     # It's called tcid because its a backwards dict. 
@@ -26,7 +26,7 @@ def invert(my_dict: dict[str, str]) -> dict[str,str]:
 def favorite_color(my_dict: dict[str, str]) -> str: 
     """Reports the color most frequently names as favorite color."""
     color_scores: dict[str, int] = dict() 
-    unique_colors: list [str] = list()
+    unique_colors: list[str] = list()
     winning_color: str = ""
     winning_color_score: int = 0
     for person in my_dict: 
@@ -51,9 +51,10 @@ def favorite_color(my_dict: dict[str, str]) -> str:
             winning_color_score = color_scores[color]
     return winning_color
 
+
 def count(my_list: list[str]) -> dict[str, int]: 
     """Reports the number of times an item in a list appears."""
-    counted: dict[str,int] = dict()
+    counted: dict[str, int] = dict()
     # Creates a dictionary to hold unique values and the amount of times they are reported.
     for value in my_list: 
         if value in counted: 
